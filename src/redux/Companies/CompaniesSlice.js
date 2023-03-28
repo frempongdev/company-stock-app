@@ -8,9 +8,10 @@ const initialState = {
   error: '',
 };
 
-export const fetchCompanies = createAsyncThunk('countries/fetchCompanies', async () => {
+export const fetchCompanies = createAsyncThunk('companies/fetchCompanies', async () => {
   const response = await fetch(url);
   const data = response.json();
+  console.log('nice', data);
   return data;
 });
 
