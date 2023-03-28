@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link, useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { fetchProfile } from '../redux/Profile/profileSlice';
 
 const Profile = () => {
   const { profile, isLoading } = useSelector((state) => state.profile);
   const dispatch = useDispatch();
   const { companySymbol } = useParams();
+  const history = useNavigate();
 
   useEffect(() => {
     dispatch(fetchProfile(companySymbol));
@@ -18,13 +19,13 @@ const Profile = () => {
 
   return (
     <div>
-      <Link to="/">
-        <button type="button" className="back">
-          {'<'}
-          back
-        </button>
+      {/* <Link to="/"> */}
+      <button type="button" className="back" onClick={() => history(-1)}>
+        {'<'}
+        back
+      </button>
 
-      </Link>
+      {/* </Link> */}
       <div className="company-img">
         <img src={profile[0]?.image} alt="companyImg" />
       </div>
