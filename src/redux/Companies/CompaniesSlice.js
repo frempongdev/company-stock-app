@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-const url = 'https://financialmodelingprep.com/api/v3/stock-screener?priceMoreThan=800&apikey=958d9faee6392a89d333869c614c50e6';
+const url = 'https://financialmodelingprep.com/api/v3/stock-screener?priceMoreThan=200&exchange=NASDAQ,NYSE&apikey=d97b2f08a9a36a89179abfa4fb580330';
 
 const initialState = {
   companies: [],

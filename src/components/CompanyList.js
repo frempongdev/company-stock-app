@@ -16,7 +16,7 @@ const CompanyList = () => {
         )
           : (
             <div className="company-box" key={company.symbol}>
-              <Link to="/Profile">
+              <Link to={`/Profile/${company.symbol}`}>
                 <button type="button" className="back">
                   more info
                   {' > '}
