@@ -29,12 +29,12 @@ const CompanyList = ({ searchTerm }) => {
                   {' > '}
                 </button>
               </Link>
-              <h5 className="company-name">{company.companyName}</h5>
-              <h6 className="company-name">{company.symbol}</h6>
+              <h3 className="company-name">{company.symbol}</h3>
               <span className="stock-price">
                 $
                 {company.price}
               </span>
+              <h5 className="company-name">{company.companyName}</h5>
             </div>
           )
         ))}
