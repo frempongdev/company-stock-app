@@ -2,16 +2,16 @@ import { Provider } from 'react-redux';
 import '@testing-library/jest-dom';
 import { BrowserRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
-import Profile from '../components/Profile';
+import Navbar from '../components/Navbar';
 import store from '../redux/store';
 
-describe('Profile', () => {
-  it('renders Profile', () => {
+describe('Navbar', () => {
+  it('renders Navbar', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
           <BrowserRouter>
-            <Profile />
+            <Navbar />
           </BrowserRouter>
         </Provider>,
       )

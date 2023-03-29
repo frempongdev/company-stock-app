@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Companies renders Companies 1`] = `
+<div
+  className="main"
+>
+  <h5
+    className="header"
+  >
+    World’s Most Valuable Company Stocks
+  </h5>
+  <input
+    className="search"
+    onChange={[Function]}
+    placeholder="Search..."
+    type="text"
+    value=""
+  />
+  <div
+    className="company-box"
+  >
+    <div
+      className="company-wrapper"
+    />
+    <button
+      className="back-to-top"
+      onClick={[Function]}
+      type="button"
+    >
+      ^Back to top^
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Profile renders Profile 1`] = `
+<div>
+  <button
+    className="back"
+    onClick={[Function]}
+    type="button"
+  >
+    &lt;
+    back
+  </button>
+  <div
+    className="company-img"
+  >
+    <img
+      alt="companyImg"
+    />
+  </div>
+  <div
+    className="company-details"
+  >
+    <h2
+      className="company-name"
+    />
+    <h6
+      className="company-location"
+    >
+      ,
+       
+    </h6>
+    <p
+      className="company-symbol"
+    >
+      Stock Symbol:
+       
+    </p>
+    <p
+      className="stock"
+    >
+      Stock Price:
+       
+      $
+    </p>
+    <p
+      className="industry"
+    >
+      Industry :
+       
+    </p>
+    <h4
+      className="details"
+    >
+      Company Overview
+    </h4>
+    <p
+      className="details"
+    />
+  </div>
+</div>
+`;
