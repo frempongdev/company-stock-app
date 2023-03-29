@@ -35,13 +35,13 @@ exports[`Profile renders Profile 1`] = `
       Stock Symbol:
        
     </p>
-    <p
+    <h4
       className="stock"
     >
       Stock Price:
        
       $
-    </p>
+    </h4>
     <p
       className="industry"
     >
