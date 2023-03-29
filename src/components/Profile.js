@@ -19,13 +19,10 @@ const Profile = () => {
 
   return (
     <div>
-      {/* <Link to="/"> */}
       <button type="button" className="back" onClick={() => history(-1)}>
         {'<'}
         back
       </button>
-
-      {/* </Link> */}
       <div className="company-img">
         <img src={profile[0]?.image} alt="companyImg" />
       </div>
