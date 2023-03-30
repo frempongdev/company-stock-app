@@ -1,13 +1,20 @@
-import React from 'react';
 import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
+
 import { Link } from 'react-router-dom';
 import '../styles/CompanyList.css';
 
-const CompanyList = () => {
+const CompanyList = ({ searchTerm }) => {
   const { companies } = useSelector((state) => state.companies);
+
+  const filteredCompanies = companies.filter((company) => (
+    company.companyName.toLowerCase().includes(searchTerm.toLowerCase())
+       || company.symbol.toLowerCase().includes(searchTerm.toLowerCase())
+  ));
   return (
     <div className="company-wrapper">
-      {[...companies]
+
+      {[...filteredCompanies]
         .sort((a, b) => b.price - a.price)
         .map((company) => (company.isLoading ? (
           <div className="company-box" key={company.symbol}>
@@ -16,7 +23,7 @@ const CompanyList = () => {
         )
           : (
             <div className="company-box" key={company.symbol}>
-              <Link to="/Profile">
+              <Link to={`/Profile/${company.symbol}`}>
                 <button type="button" className="back">
                   more info
                   {' > '}
@@ -33,5 +40,13 @@ const CompanyList = () => {
         ))}
     </div>
   );
+};
+
+CompanyList.propTypes = {
+  searchTerm: PropTypes.string,
+};
+
+CompanyList.defaultProps = {
+  searchTerm: '',
 };
 export default CompanyList;

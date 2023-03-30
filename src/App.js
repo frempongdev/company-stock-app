@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Companies />} />
-        <Route path="/Profile" element={<Profile />} />
+        <Route path="/Profile/:companySymbol" element={<Profile />} />
       </Routes>
     </div>
   );

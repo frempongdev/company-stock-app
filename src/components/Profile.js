@@ -1,27 +1,66 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link, useParams } from 'react-router-dom';
+import { fetchProfile } from '../redux/Profile/profileSlice';
 
-const Profile = () => (
-  <div>
-    <Link to="/">
-      <button type="button" className="back">
-        {'<'}
-        back
-      </button>
+const Profile = () => {
+  const { profile, isLoading } = useSelector((state) => state.profile);
+  const dispatch = useDispatch();
+  const { companySymbol } = useParams();
 
-    </Link>
-    <div className="company-img" />
-    <div className="company-details">
-      <h5 className="company-name">Name</h5>
-      <h6 className="company-symbol">SYMB</h6>
-      <p className="stock">$100</p>
-      <p className="country">Ghana</p>
-      <p className="industry">Tech</p>
-      <p className="details">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et laborum enim libero excepturi eum perspiciatis, cum incidunt facere? Nam, cupiditate placeat tenetur minima corporis molestiae est unde quas eligendi commodi quidem sequi, autem adipisci rem odio vero? Error architecto amet labore nulla iusto modi at, similique voluptas sit alias distinctio aspernatur sunt. Excepturi, minima. Unde magnam, delectus deleniti quae esse ex quasi soluta nam vitae possimus repellendus sequi, numquam aliquid rem sed asperiores. Voluptates recusandae veritatis laboriosam assumenda aliquid laborum deserunt quidem natus provident cum quaerat hic autem sunt eveniet illum culpa, suscipit, iste quia maxime, aliquam reprehenderit. Dignissimos quae porro mollitia voluptatem unde laboriosam accusamus. Officiis aperiam, est repudiandae inventore quis consequatur? Tenetur, veritatis error. Facere iste atque illo alias repudiandae deserunt sunt optio animi quibusdam excepturi beatae nesciunt dignissimos modi esse eaque ab minus, laboriosam, qui consequatur fugit vero dolore eligendi. Quasi blanditiis voluptatum impedit totam numquam explicabo.</p>
+  useEffect(() => {
+    dispatch(fetchProfile(companySymbol));
+  }, [dispatch]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  if (isLoading) {
+    return <div>Loading Company details...</div>;
+  }
+
+  return (
+    <div>
+      <Link to="/">
+        <button type="button" className="back">
+          {'<'}
+          back
+        </button>
+
+      </Link>
+      <div className="company-img">
+        <img src={profile[0]?.image} alt="companyImg" />
+      </div>
+      <div className="company-details">
+        <h2 className="company-name">
+          {profile[0]?.companyName}
+        </h2>
+        <h6 className="company-location">
+          {profile[0]?.city}
+          ,
+          {' '}
+          {profile[0]?.country}
+        </h6>
+        <p className="company-symbol">
+          Stock Symbol:
+          {' '}
+          {profile[0]?.symbol}
+        </p>
+        <p className="stock">
+          Stock Price:
+          {' '}
+          $
+          {profile[0]?.price}
+        </p>
+        <p className="industry">
+          Industry :
+          {' '}
+          {profile[0]?.industry}
+        </p>
+        <h4 className="details">Company Overview</h4>
+        <p className="details">{profile[0]?.description}</p>
+
+      </div>
 
     </div>
-
-  </div>
-);
+  );
+};
 
 export default Profile;
