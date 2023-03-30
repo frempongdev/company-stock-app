@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams, useNavigate } from 'react-router-dom';
 import { fetchProfile } from '../redux/Profile/profileSlice';
+import '../styles/Profile.css';
 
 const Profile = () => {
   const { profile, isLoading } = useSelector((state) => state.profile);
@@ -18,11 +19,12 @@ const Profile = () => {
   }
 
   return (
-    <div>
+    <div className="profile-main">
       <button type="button" className="back" onClick={() => history(-1)}>
         {'<'}
         back
       </button>
+      <br />
       <div className="company-img">
         <img src={profile[0]?.image} alt="companyImg" />
       </div>
@@ -52,7 +54,7 @@ const Profile = () => {
           {' '}
           {profile[0]?.industry}
         </p>
-        <h4 className="details">Company Overview</h4>
+        <h4 className="details-title">Company Overview</h4>
         <p className="details">{profile[0]?.description}</p>
 
       </div>
