@@ -16,26 +16,31 @@ const CompanyList = ({ searchTerm }) => {
 
       {[...filteredCompanies]
         .sort((a, b) => b.price - a.price)
-        .map((company) => (company.isLoading ? (
+        .map((company, index) => (company.isLoading ? (
           <div className="company-box" key={company.symbol}>
             <span className="load-message">loading Company details ... </span>
           </div>
         )
           : (
-            <div className="company-box" key={company.symbol}>
-              <Link to={`/Profile/${company.symbol}`}>
-                <button type="button" className="back">
-                  more info
-                  {' > '}
-                </button>
-              </Link>
-              <h5 className="company-name">{company.companyName}</h5>
-              <h6 className="company-name">{company.symbol}</h6>
-              <span className="stock-price">
-                $
-                {company.price}
-              </span>
-            </div>
+            <>
+              <div className="company-box" key={company.symbol}>
+                <div className="box-top">
+                  <h3 className="rank">{index + 1}</h3>
+                  <Link to={`/Profile/${company.symbol}`}>
+                    <button type="button" className="back">
+                      more
+                      {' > '}
+                    </button>
+                  </Link>
+                </div>
+                <h3 className="company-name">{company.symbol}</h3>
+                <span className="stock-price">
+                  $
+                  {company.price}
+                </span>
+                <h5 className="company-name">{company.companyName}</h5>
+              </div>
+            </>
           )
         ))}
     </div>
