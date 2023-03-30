@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile renders Profile 1`] = `
+<div>
+  <button
+    className="back"
+    onClick={[Function]}
+    type="button"
+  >
+    &lt;
+    back
+  </button>
+  <div
+    className="company-img"
+  >
+    <img
+      alt="companyImg"
+    />
+  </div>
+  <div
+    className="company-details"
+  >
+    <h2
+      className="company-name"
+    />
+    <h6
+      className="company-location"
+    >
+      ,
+       
+    </h6>
+    <p
+      className="company-symbol"
+    >
+      Stock Symbol:
+       
+    </p>
+    <h4
+      className="stock"
+    >
+      Stock Price:
+       
+      $
+    </h4>
+    <p
+      className="industry"
+    >
+      Industry :
+       
+    </p>
+    <h4
+      className="details"
+    >
+      Company Overview
+    </h4>
+    <p
+      className="details"
+    />
+  </div>
+</div>
+`;

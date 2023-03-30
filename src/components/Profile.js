@@ -41,12 +41,12 @@ const Profile = () => {
           {' '}
           {profile[0]?.symbol}
         </p>
-        <p className="stock">
+        <h4 className="stock">
           Stock Price:
           {' '}
           $
           {profile[0]?.price}
-        </p>
+        </h4>
         <p className="industry">
           Industry :
           {' '}
