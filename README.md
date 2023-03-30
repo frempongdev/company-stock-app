@@ -1,70 +1,217 @@
-# Getting Started with Create React App
+ 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a name="readme-top"></a>
 
-## Available Scripts
 
-In the project directory, you can run:
+<div align="center">
 
-### `npm start`
+  <img src="https://img.money.com/2021/07/Explainer-How-To-Buy-Stocks.jpg?quality=60&w=800" alt="logo" width="120"  height="auto" />
+  <br/>
+   
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <h1><b>Company Stocks Genie 🗠🗠</b></h1>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+</div>
+<br>
+<!-- TABLE OF CONTENTS -->
 
-### `npm test`
+## 📗 Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+     - [Key Features](#key-features)
 
-### `npm run build`
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Usage](#usage)
+- [👥 Authors](#authors)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- DEPLOYMENT -->
+### This project goes live [here](https://space-travelers-f2ji.onrender.com/) 🚀 .
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br> 
 
-### `npm run eject`
+<!-- DEPLOYMENT -->
+ <!--### Have a look at the project's video presentation [here](https://drive.google.com/file/d/1skgLsHGHswEhiKERjOi6zl1o8dcdOaxm/view?usp=sharing) 📽️ .-->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- PROJECT DESCRIPTION -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# 📖 [Company Stocks Genie] <a name="about-project"></a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+**Company Stocks Genie** is a Single Page Application for stock investors and anyone else interested in the prices of stocks in the Global Stocks market. If fetches real-time stock prices from the Financial Modeling Prep API together with other details of the companies. The user gets more details about the company by clicking on the more button for the company item's tab.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠 Built With <a name="built-with"></a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Tech Stack <a name="tech-stack"></a>
 
-### Code Splitting
+<details>
+  <summary>React</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">Link to React</a></li>
+  </ul>
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<details>
+  <summary>Javascript</summary>
+  <ul>
+    <li><a href="https://www.javascript.com/">Link to Javascript</a></li>
+  </ul>
+</details>
 
-### Analyzing the Bundle Size
+<details>
+  <summary>HTML5</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Link to HTML</a></li>
+  </ul>
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<details>
+  <summary>CSS3</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Link to CSS</a></li>
+  </ul>
+</details>
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- Features -->
 
-### Advanced Configuration
+### Key Features <a name="key-features"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **This project fetches data from the Financial Modeling Prep API**
+- **This project displays fetched data of Company Stocks dynamically in the DOM**
+- **This project shows a sorted list of the most valuable stocks in the Global market.**
+- **This project fetches more details of the company from the Financial Modeling Prep API**
+- **This project has syntax with ES6 format.**
+- **This project makes use of React-Redux.**
+- **This Project has a Readme.md file**
+- **This Project has a gitignore file**
+- **This projects follows all Microverse Linters**
 
-### Deployment
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- GETTING STARTED -->
 
-### `npm run build` fails to minify
+## 💻 Getting Started <a name="getting-started"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need to copy the link of this Repository.
+
+
+
+```sh
+ https://github.com/frempongdev/company-stock-app.git
+```
+<br>
+
+### Setup
+
+Clone this repository to your desired directory using the command: 
+
+
+```sh
+  cd your-folder
+  git clone https://github.com/frempongdev/company-stock-app.git 
+```
+
+<br>
+
+
+### Usage
+
+Kindly go ahead and give this project a massage but do not forget to give a detailed description in your pull request.
+
+
+Install the required dependencies using the following command:
+
+```sh
+  npm install
+```
+
+Run the server using the following command:
+
+```sh
+  npm start
+```
+-
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- AUTHORs -->
+
+## 👥 Author <a name="authors"></a>
+### 👥 Frempong
+
+- GitHub: [@frempongdev](https://github.com/frempongdev)
+- Twitter: [@knobaddy](https://twitter.com/knobaddy)
+- LinkedIn: [Samuel Amankwaa-Frempong](https://www.linkedin.com/in/frempongdev/)
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **[Platform for Stock Sales]**
+- [ ] **[Investment Tips tab]**
+- [ ] **[Animations for Page]**
+- [ ] **[Server Storage]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+## 🤝 Contributing <a name="contributing"></a>
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+
+If you like this project kindly support by suggesting changed by forking and pull requests
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank  everyone who inspired me to learn programming. Regards to the whole Microverse team, Peers, and family supporting.
+<br>
+<br>
+A massive Thank You to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) who is the original designer of this [design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
