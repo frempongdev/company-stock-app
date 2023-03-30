@@ -1,20 +1,23 @@
 .profile-main {
-    padding: 0% 4%;
+  padding: 0% 4%;
 }
-.back {
-    margin-top: 1%;
-    float: left;
-}
-.company-img {
-    margin-top: 2%;
-    border: 1px solid white;
 
+.back {
+  margin-top: 1%;
+  float: left;
 }
+
+.company-img {
+  margin-top: 2%;
+  border: 1px solid white;
+}
+
 .details-title {
-    padding: 2%;
-    border: solid white;
+  padding: 2%;
+  border: solid white;
 }
+
 .details {
-    border: solid white;
-    padding: 1%;
+  border: solid white;
+  padding: 1%;
 }

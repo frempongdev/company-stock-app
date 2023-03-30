@@ -1,30 +1,27 @@
 .main-top {
-    background-image: url(../assets/stocks-bg.png);
-    background-position: -84% 80%;
-    background-size: 68%;
-    background-repeat: no-repeat;
-}
-
-.main-top {
-    border-bottom: rgb(255, 255, 255) solid;
+  background-image: url(../assets/stocks-bg.png);
+  background-position: -84% 80%;
+  background-size: 68%;
+  background-repeat: no-repeat;
+  border-bottom: rgb(255, 255, 255) solid;
 }
 
 .back-to-top {
-    position: fixed;
-    bottom: 0;
-    right: 2%;
+  position: fixed;
+  bottom: 0;
+  right: 2%;
 }
 
 .search {
-    border: none;
-    border-radius: 5px;
-    float: right;
-    margin-top: 2%;
-    padding: 0.5%;
+  border: none;
+  border-radius: 5px;
+  float: right;
+  margin-top: 2%;
+  padding: 0.5%;
 }
 
 .header {
-    margin: 6%;
-    color: rgb(55, 55, 55);
-    font-size: 1.01rem;
+  margin: 6%;
+  color: rgb(55, 55, 55);
+  font-size: 1.01rem;
 }
