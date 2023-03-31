@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Companies Snapshot renders Companies 1`] = `
+<div
+  className="main"
+>
+  <h5
+    className="header"
+  >
+    World’s Most Valuable Company Stocks
+  </h5>
+  <input
+    className="search"
+    onChange={[Function]}
+    placeholder="Search..."
+    type="text"
+    value=""
+  />
+  <div
+    className="company-box"
+  >
+    <div
+      className="company-wrapper"
+    />
+    <button
+      className="back-to-top"
+      onClick={[Function]}
+      type="button"
+    >
+      ^Back to top^
+    </button>
+  </div>
+</div>
+`;

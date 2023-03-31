@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders Navbar 1`] = `
+<div
+  className="nav-main"
+>
+  <h1>
+    Company Stocks App
+  </h1>
+</div>
+`;
